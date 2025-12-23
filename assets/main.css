@@ -55,7 +55,7 @@ a:hover {
   display: flex;
   justify-content: center;
 
-  background-image: url(/assets/ocean.jpg);
+  background-image: url(assets/ocean.jpg);
   background-size: 100vw;
 }
 
