@@ -22,10 +22,6 @@ body {
   justify-content: space-between;
 }
 
-body > * {
-  flex: 1 100%;
-}
-
 .section-heading {
   margin-bottom: 15px;
 }
@@ -48,15 +44,40 @@ a:hover {
   text-decoration: underline;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
 .site-header {
   border-bottom: 1px solid #e8e8e8;
-  height: 35vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
+  padding: 10px 15px;
+  min-height: 20vh;
 
   background-color: #1f1f3e;
-  background-size: 100vw;
+}
+
+.header-title-nav-wrapper {
+  justify-content: space-between;
+}
+
+.header-title-logo {
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-logo {
+  font-size: 7px;
+}
+
+.header-title {
+  font-size: 25px;
 }
 
 .header-wrapper {
@@ -67,9 +88,8 @@ a:hover {
   justify-content: space-evenly;
 }
 
-.site-title {
-  line-height: 54px;
-  font-weight: bold;
+.site-subtitle {
+  text-align: center;
 }
 
 .image-container {
