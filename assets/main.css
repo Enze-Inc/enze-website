@@ -211,24 +211,8 @@ body {
 }
 
 /* Footer */
-.footer-wrapper {
+.site-footer {
+  background-color: var(--header-background-color);
   border-top: 1px solid #e8e8e8;
   padding: 1em;
-}
-
-.footer-heading {
-  margin-bottom: 15px;
-}
-
-.footer-col-wrapper {
-  font-size: 15px;
-  margin-left: -15px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.footer-col {
-  margin-bottom: 15px;
-  padding-left: 15px;
 }
