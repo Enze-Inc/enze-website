@@ -11,8 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   --dark-text-color: #232323;
-  --light-text-color: #ddd;
-  --header-background-color: #074F57;
+  --light-text-color: #ddd;  
+  --header-background-color: #096671;
   --main-background-color: #E4C5AF;
   --site-background-color: #444;
   --section-border-color: black;
@@ -36,6 +36,21 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+
+@media only screen and (min-width: 1200px) {
+  body {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+
 
 .flex-row {
   display: flex;
@@ -103,6 +118,10 @@ body {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding-left: 12px;
+}
+
+.nav-link:last-child {
+  padding-right: 12px;
 }
 
 .nav-link:not(:last-child) {
