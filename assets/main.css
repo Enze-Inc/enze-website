@@ -34,10 +34,6 @@ body {
   flex-direction: column;
 }
 
-.section-heading {
-  margin-bottom: 15px;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -119,6 +115,7 @@ body {
 
 .body-wrapper {
   padding: 1em;
+  gap: 15px;
 }
 
 /* Cards */
