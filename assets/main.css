@@ -12,11 +12,14 @@ h1, h2, h3, h4, h5, h6 {
 body {
   --dark-text-color: #232323;
   --light-text-color: #ddd;
-  --header-background-color: #1f1f3e;
+  --header-background-color: #074F57;
+  --main-background-color: #E4C5AF;
   --site-background-color: #444;
-  --section-border-color: #e8e8e8;
+  --section-border-color: black;
 
-  --nav-link-text-color: #80edff;
+  --nav-background-color: #E4C5AF;
+  --nav-link-text-color: #074F57;
+  /* --nav-link-text-color: #80edff; */
   --nav-link-text-hover: #10ceef;
   
   --card-header-background-color: cornflowerblue;
@@ -26,7 +29,7 @@ body {
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   color: var(--light-text-color);
-  background-color: var(--site-background-color);
+  background-color: var(--header-background-color);
   text-shadow: 0 1px 3px rgba(0,0,0,.2);	
   text-rendering: optimizeLegibility;
   display: flex;
@@ -85,13 +88,15 @@ body {
 .nav-link {
   color: var(--nav-link-text-color);
   text-decoration: none;
-  background: purple;
+  background: var(--nav-background-color);
   padding: 7px;
 }
 
 .nav-link:hover {
   color: var(--nav-link-text-hover);
+  filter: brightness(1.1);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .nav-link:first-child {
@@ -101,7 +106,7 @@ body {
 }
 
 .nav-link:not(:last-child) {
-  border-right: 1px solid black;
+  border-right: 1px solid var(--light-text-color);
 }
 
 .site-subtitle {
@@ -111,6 +116,8 @@ body {
 /* Main */
 .site-main {
   min-height: 66vh;
+  background-color: var(--main-background-color);
+  color: var(--dark-text-color)
 }
 
 .body-wrapper {
@@ -130,6 +137,8 @@ body {
   flex-flow: row wrap;
   background: var(--card-background-color);
   color: var(--dark-text-color);
+  border: 1px solid var(--card-header-background-color);
+  border-radius: 1px;
 }
 
 .card > * {
